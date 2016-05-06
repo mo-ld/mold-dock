@@ -15,4 +15,4 @@ api:
 vt:
   image: zorino/docker-virtuoso
   volumes:
-    - /home/zorino/workspace/intermine/mold-virtuoso:/mnt/graphs
+    - ./mold-virtuoso:/mnt/graphs
