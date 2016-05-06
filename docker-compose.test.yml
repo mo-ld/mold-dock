@@ -1,0 +1,25 @@
+webapp:
+  build: ./docker-mold-webapp
+  dockerfile: Dockerfile.debug
+  environment:
+    - HOST_NAME=localhost
+    - HOST_PORT=8080
+    - BRANCH=quick-search
+  ports:
+   - "8080:80"
+  links:
+    - api
+    - vt
+api:
+  build: ./docker-mold-api
+  dockerfile: Dockerfile.debug
+  environment:
+    - BRANCH=master
+  links:
+    - vt
+vt:
+  image: zorino/docker-virtuoso
+  volumes:
+    - /home/zorino/workspace/intermine/mold-virtuoso:/mnt/graphs
+  ports:
+    - "9000:9000"

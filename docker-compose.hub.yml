@@ -1,0 +1,18 @@
+webapp:
+  image: mold/mold_webapp
+  environment:
+    - HOST_NAME=localhost
+    - HOST_PORT=80
+  ports:
+   - "80:80"
+  links:
+   - api
+   - vt
+api:
+  image: mold/mold_api
+  links:
+    - vt
+vt:
+  image: zorino/docker-virtuoso
+  volumes:
+    - /home/zorino/workspace/intermine/mold-virtuoso:/mnt/graphs
