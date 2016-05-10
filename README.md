@@ -29,3 +29,5 @@ mv yeastmold_vt mold-virtuoso
 docker-compose -f docker-compose.hub.yml -p yeastmold .
 ```
 
+You should now have an instance of yeastmold at http://localhost
+
