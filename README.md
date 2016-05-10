@@ -15,7 +15,7 @@ You can find the virtuoso database file here :
 * ZebrafishMold : http://mo-ld.org/download/zebrafishmold_vt.tar.gz
 * FlyMold : http://mo-ld.org/download/flymold_vt.tar.gz
 * RatMold : http://mo-ld.org/download/ratmold_vt.tar.gz
-* MouseMold : http://mo-ld.org/download/moussemold_vt.tar.gz
+* MouseMold : http://mo-ld.org/download/mousemold_vt.tar.gz
 * HumanMold : http://mo-ld.org/download/humanmold_vt.tar.gz
 
 
@@ -28,3 +28,4 @@ curl -L http://vt.mo-ld.org/download/yeastmold_vt.tar.gz | tar xvz
 mv yeastmold_vt mold-virtuoso
 docker-compose -f docker-compose.hub.yml -p yeastmold .
 ```
+

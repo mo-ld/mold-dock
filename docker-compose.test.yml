@@ -18,7 +18,7 @@ api:
   links:
     - vt
 vt:
-  image: zorino/docker-virtuoso
+  image: mold/docker-virtuoso
   volumes:
     - ./mold-virtuoso:/mnt/graphs
   ports:
