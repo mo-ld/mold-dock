@@ -2,7 +2,7 @@
 
 cd /opt
 rm -fr mold-api
-git clone https://github.com/mo-ld/mold-api.git
+git clone -b $BRANCH https://github.com/mo-ld/mold-api.git
 cd mold-api
 /bin/bash -l -c "rvm requirements && rvm install 2.3.0 && gem install bundler --no-ri --no-rdoc && bundle install"
 wait

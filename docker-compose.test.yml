@@ -4,7 +4,7 @@ webapp:
   environment:
     - HOST_NAME=localhost
     - HOST_PORT=8080
-    - BRANCH=quick-search
+    - BRANCH=master
   ports:
    - "8080:80"
   links:
@@ -14,7 +14,7 @@ api:
   build: ./docker-mold-api
   dockerfile: Dockerfile.debug
   environment:
-    - BRANCH=master
+    - BRANCH=sparql_post
   links:
     - vt
 vt:
