@@ -11,12 +11,12 @@ In order to launch an MOLD instance you will need :
 
 You can find the virtuoso database file here :
 
-* YeastMold : http://mo-ld.org/download/yeastmold_vt.tar.gz
-* ZebrafishMold : http://mo-ld.org/download/zebrafishmold_vt.tar.gz
-* FlyMold : http://mo-ld.org/download/flymold_vt.tar.gz
-* RatMold : http://mo-ld.org/download/ratmold_vt.tar.gz
-* MouseMold : http://mo-ld.org/download/mousemold_vt.tar.gz
-* HumanMold : http://mo-ld.org/download/humanmold_vt.tar.gz
+* YeastMold : http://mo-ld.org/download/yeastmold-vt.tar.gz
+* ZebrafishMold : http://mo-ld.org/download/zebrafishmold-vt.tar.gz
+* FlyMold : http://mo-ld.org/download/flymold-vt.tar.gz
+* RatMold : http://mo-ld.org/download/ratmold-vt.tar.gz
+* MouseMold : http://mo-ld.org/download/mousemold-vt.tar.gz
+* HumanMold : http://mo-ld.org/download/humanmold-vt.tar.gz
 
 Each Organism Virtuoso DB file has CORS enabled for /sparql and /fct (required) and have the default user/password dba/dba
 
@@ -25,10 +25,9 @@ Each Organism Virtuoso DB file has CORS enabled for /sparql and /fct (required) 
 ```
 git clone https://github.com/mo-ld/mold-dock.git
 cd mold-dock
-curl -L http://mo-ld.org/download/yeastmold_vt.tar.gz | tar xvz
+curl -L http://mo-ld.org/download/yeastmold-vt.tar.gz | tar xvz
 mv yeastmold-vt mold-virtuoso
 docker-compose -f docker-compose.hub.yml -p yeastmold .
 ```
 
 You should now have an instance of yeastmold at http://localhost
-
