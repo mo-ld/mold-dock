@@ -15,6 +15,6 @@ api:
   links:
     - vt
 vt:
-  image: mold/docker-virtuoso
+  image: mold/docker-virtuoso:7.2.4.2
   volumes:
     - ./mold-virtuoso:/mnt/graphs
