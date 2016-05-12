@@ -26,7 +26,7 @@ Each Organism Virtuoso DB file has CORS enabled for /sparql and /fct (required) 
 git clone https://github.com/mo-ld/mold-dock.git
 cd mold-dock
 curl -L http://mo-ld.org/download/yeastmold_vt.tar.gz | tar xvz
-mv yeastmold_vt mold-virtuoso
+mv yeastmold-vt mold-virtuoso
 docker-compose -f docker-compose.hub.yml -p yeastmold .
 ```
 
