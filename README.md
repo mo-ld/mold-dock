@@ -18,6 +18,7 @@ You can find the virtuoso database file here :
 * MouseMold : http://mo-ld.org/download/mousemold_vt.tar.gz
 * HumanMold : http://mo-ld.org/download/humanmold_vt.tar.gz
 
+Each Organism Virtuoso DB file has CORS enabled for /sparql and /fct (required) and have the default user/password dba/dba
 
 ## Example for YeastMold
 
