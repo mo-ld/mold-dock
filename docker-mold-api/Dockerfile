@@ -8,7 +8,7 @@ MAINTAINER zorino <maximilien1er@gmail.com>
 RUN apt-get update \
  && apt-get install -y curl \
  && cd /opt \
- && curl -L https://github.com/mo-ld/mold-api/releases/download/v0.2/mold-api.v0.2.tar.gz | tar xvz \
+ && curl -L https://github.com/mo-ld/mold-api/releases/download/v0.3/mold-api.v0.3.tar.gz | tar xvz \
  && cd mold-api \
  && gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 \
  && \curl -L https://get.rvm.io | bash -s stable \
