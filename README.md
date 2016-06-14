@@ -27,7 +27,7 @@ git clone https://github.com/mo-ld/mold-dock.git
 cd mold-dock
 curl -L http://mo-ld.org/download/yeastmold-vt.tar.gz | tar xvz
 mv yeastmold-vt mold-virtuoso
-docker-compose -f docker-compose.hub.yml -p yeastmold .
+docker-compose -f docker-compose.hub.yml -p yeastmold up
 ```
 
 You should now have an instance of yeastmold at http://localhost
