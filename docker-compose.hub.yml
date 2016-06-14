@@ -8,6 +8,7 @@ webapp:
   links:
    - api
    - vt
+   - ldf
 api:
   image: mold/mold_api
   links:
@@ -16,3 +17,10 @@ vt:
   image: mold/docker-virtuoso:7.2.4.2
   volumes:
     - ./mold-virtuoso:/mnt/graphs
+ldf:
+  image: linkeddatafragments/server.js
+  command: /mnt/ldf/mold-config.json 3000 4
+  volumes:
+    - ./docker-mold-ldf:/mnt/ldf
+  links:
+    - vt
