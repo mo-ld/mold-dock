@@ -10,6 +10,7 @@ webapp:
   links:
     - api
     - vt
+    - ldf
 api:
   build: ./docker-mold-api
   dockerfile: Dockerfile.debug
@@ -23,3 +24,12 @@ vt:
     - ./mold-virtuoso:/mnt/graphs
   ports:
     - "9000:9000"
+ldf:
+  image: linkeddatafragments/server.js
+  command: /mnt/ldf/mold-config.json 3000 4
+  volumes:
+    - ./docker-mold-ldf:/mnt/ldf
+  ports:
+    - "3000:3000"
+  links:
+    - vt

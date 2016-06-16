@@ -1,0 +1,43 @@
+{
+  "title": "MOLD",
+
+  "datasources": {
+    "fly": {
+      "title": "Fly",
+      "type": "SparqlDatasource",
+      "settings": { "endpoint": "http://vt:9000/sparql", "defaultGraph": "http://fly.mo-ld.org" }
+    },
+    "human": {
+      "title": "Human",
+      "type": "SparqlDatasource",
+      "settings": { "endpoint": "http://vt:9000/sparql", "defaultGraph": "http://human.mo-ld.org" }
+    },
+    "mouse": {
+      "title": "Mouse",
+      "type": "SparqlDatasource",
+      "settings": { "endpoint": "http://vt:9000/sparql", "defaultGraph": "http://mouse.mo-ld.org" }
+    },
+    "rat": {
+      "title": "Rat",
+      "type": "SparqlDatasource",
+      "settings": { "endpoint": "http://vt:9000/sparql", "defaultGraph": "http://rat.mo-ld.org" }
+    },
+    "yeast": {
+      "title": "Yeast",
+      "type": "SparqlDatasource",
+      "settings": { "endpoint": "http://vt:9000/sparql", "defaultGraph": "http://yeast.mo-ld.org" }
+    },
+    "zebrafish": {
+      "title": "Zebrafish",
+      "type": "SparqlDatasource",
+      "settings": { "endpoint": "http://vt:9000/sparql", "defaultGraph": "http://zebrafish.mo-ld.org" }
+    }
+  },
+
+  "prefixes": {
+    "rdf":         "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd":         "http://www.w3.org/2001/XMLSchema#",
+    "hydra":       "http://www.w3.org/ns/hydra/core#",
+    "void":        "http://rdfs.org/ns/void#"
+  }
+}
